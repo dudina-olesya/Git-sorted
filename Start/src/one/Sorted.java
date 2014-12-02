@@ -16,7 +16,7 @@ int[] arr;
 
   public int[] InputArrayOfNumbers(){  
 	   InputSizeOfTheArray();
-	   System.out.print("¬ведите элементы массива: ");
+	   System.out.print("¬ведите элемент массива: ");
        for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
         }
