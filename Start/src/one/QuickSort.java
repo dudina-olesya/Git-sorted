@@ -1,6 +1,6 @@
 package one;
 
-public class Quick_sort implements Sorting {
+public class QuickSort implements Sorting {
 
     int left, right;
     
@@ -29,19 +29,19 @@ public class Quick_sort implements Sorting {
 	 
 	public int[] sort(int[] arr, int size) {
 		  left = 0; right=size-1;
-		  int[] ar =  QuickSort(arr,left,right);
+		  int[] ar =  quickSort(arr,left,right);
 		   System.out.print("Быстрая сортировка: " );
 			 for (int i = 0; i < arr.length; i++) 
 		         System.out.print(arr[i] + " ");
 	      return ar;
 	}
 
-	private int[] QuickSort(int[] arr,int left, int right) {
+	private int[] quickSort(int[] arr,int left, int right) {
 		int index = partition(arr, left, right);
 	      if (left < index - 1)
-	    	  QuickSort(arr, left, index - 1);
+	    	  quickSort(arr, left, index - 1);
 	      if (index < right)
-	    	  QuickSort(arr, index, right);
+	    	  quickSort(arr, index, right);
 	   
 		return arr;
 		

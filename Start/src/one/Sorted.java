@@ -8,14 +8,14 @@ Scanner sc = new Scanner(System.in);
 private int size;
 int[] arr;
 
-	void InputSizeOfTheArray(){
+	void inputSize(){
 	System.out.println("¬ведите размер массива: ");
 	size = sc.nextInt();
 	arr = new int[size];
 	}
 
-  public int[] InputArrayOfNumbers(){  
-	   InputSizeOfTheArray();
+  public int[] inputArray(){  
+	   inputSize();
 	   System.out.print("¬ведите элемент массива: ");
        for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
@@ -29,11 +29,11 @@ int[] arr;
 }
   
 	public static void main(String[] args) {
-		Sorted sort_mass = new Sorted();
-		Bubble_sort bubble_sort = new Bubble_sort();
-		bubble_sort.sort(sort_mass.InputArrayOfNumbers(), sort_mass.GetSize());
-		Quick_sort quick_sort = new Quick_sort();
-		quick_sort.sort(sort_mass.InputArrayOfNumbers(), sort_mass.GetSize());
+		Sorted sortMass = new Sorted();
+		Sorting bubbleSort = new BubbleSort();
+		bubbleSort.sort(sortMass.inputArray(), sortMass.GetSize());
+		Sorting quickSort = new QuickSort();
+		quickSort.sort(sortMass.inputArray(), sortMass.GetSize());
 		
 	}
 	
