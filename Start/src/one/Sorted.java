@@ -9,14 +9,14 @@ private int size;
 int[] arr;
 
 	void inputSize(){
-	System.out.println("¬ведите размер массива: ");
+	System.out.println("Input size of array: ");
 	size = sc.nextInt();
 	arr = new int[size];
 	}
 
   public int[] inputArray(){  
 	   inputSize();
-	   System.out.print("¬ведите элемент массива: ");
+	   System.out.print("Input array elements: ");
        for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
         }

@@ -30,7 +30,7 @@ public class QuickSort implements Sorting {
 	public int[] sort(int[] arr, int size) {
 		  left = 0; right=size-1;
 		  int[] ar =  quickSort(arr,left,right);
-		   System.out.print("Быстрая сортировка: " );
+		   System.out.print("Quick sorting: " );
 			 for (int i = 0; i < arr.length; i++) 
 		         System.out.print(arr[i] + " ");
 	      return ar;
