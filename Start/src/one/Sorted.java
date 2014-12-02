@@ -24,16 +24,16 @@ int[] arr;
 		
 	}
 
-     public int GetSize(){
+     public int getSize(){
 	  return size;
 }
   
 	public static void main(String[] args) {
 		Sorted sortMass = new Sorted();
 		Sorting bubbleSort = new BubbleSort();
-		bubbleSort.sort(sortMass.inputArray(), sortMass.GetSize());
+		bubbleSort.sort(sortMass.inputArray(), sortMass.getSize());
 		Sorting quickSort = new QuickSort();
-		quickSort.sort(sortMass.inputArray(), sortMass.GetSize());
+		quickSort.sort(sortMass.inputArray(), sortMass.getSize());
 		
 	}
 	
